@@ -1,0 +1,907 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+a{
+	text-decoration: none;
+	color:white;
+}
+/*BODY*/
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+/*MENU DUGME*/
+
+#menu-btn{
+	display: none;
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 50px;
+	width: 50px;
+	background-color: #284280;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	margin: 10px;
+	border-radius: 5px;
+	border: 2px solid #284280;
+/*	transition: 0.3s;*/
+	z-index: 10;
+}
+
+
+.menu-linija{
+	height: 3px;
+	width: 30px;
+	background-color: white;
+	border-radius: 5px;
+	object-fit: cover;
+}
+
+
+#menu-bar{
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+	height: 400px;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #b2bbd1;
+	z-index: 9;
+
+}
+
+.menu-link{
+	color: #284280;
+	font-size: 1.3em;
+	
+}
+
+
+/*MENUBAR*/
+
+#nasa-ponuda-menu{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.strelica{
+	margin-left: 5px;
+	max-width: 16px;
+	max-height: 16px;
+}
+
+.plava-gore{
+	
+	display: none;
+}
+
+
+
+/*HEADER*/
+.naslovna{
+	padding: 50px 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+/*	flex-wrap: wrap;*/
+	gap: 40px;
+}
+
+.naslovna-tekst{
+	display: flex;
+	flex-direction: column;
+}
+
+.naslovna h3{
+	font-size: 2.33em;
+	letter-spacing: 0.1em;
+	font-weight: 200;
+	color: #284280;
+}
+
+
+.naslovna-naslov{
+	max-width: 500px;
+}
+
+.naslovne-img{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.naslovna-img{
+	max-height: 170px;
+}
+
+/*NAVBAR*/
+#nav-lista{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 30px;
+	background-color: #284280;
+	margin-bottom: 0;
+	border: none;
+	
+	
+}
+
+
+
+.link-nav{
+	text-decoration: none;
+	color: white;
+	background-clip: border-box;
+	padding: 20px 10px;
+	transition: 0.4s;
+	background-color: #284280;
+	font-size: 1.7em;
+	font-weight: 200;
+	cursor: pointer;
+}
+
+.link-nav:hover{
+	background-color: white;
+	color: #284280;
+}
+
+
+
+
+#nasa-ponuda-nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#nasa-ponuda-nav .bela-gore, .plava-dole{
+	display: none;
+}
+
+
+
+
+.link-nav:hover .bela-dole{
+	display: none;
+}
+
+.link-nav:hover .plava-dole{
+	display: inline-flex;
+}
+
+
+#nasa-ponuda-opcije{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color: #284280;
+	height: 150px;
+	display: none;
+}
+
+#nasa-ponuda-opcije a{
+	font-size: 1.5em;
+}
+/*
+.link-nav:not(#nasa-ponuda-nav){
+	display: none;
+	
+}*/
+
+
+/*NASLOVI*/
+
+.naslov-poglavlja{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 140px;
+	background-color: #f5f7fa;
+}
+
+.naslov-poglavlja h2{
+	font-size: 4em;
+	color: #284280;
+	font-weight: 300;
+}
+
+/*NASA PONUDA*/
+
+.ponuda-opis{
+	display: flex;
+}
+
+.container{
+	width: 50%;
+	height: 520px;
+}
+
+.container img{
+	width: 100%;
+	height: 520px;
+	object-fit: cover;
+}
+
+.opis-poglavlja-kolona{
+	padding: 30px 30px;
+
+
+}
+
+.opis-poglavlja{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-around;
+	
+
+}
+
+.opis-poglavlja-kolona h3{
+	font-size: 3em;
+	color: #284280;
+	font-weight: 300;
+	text-align: right;
+}
+
+.opis-poglavlja-kolona p {
+	color: #284280;
+	line-height: 2.5em;
+	text-align: right;
+}
+
+button{
+	font-family: 'Poppins', sans-serif;
+}
+
+
+
+.detaljnije-link{
+	border-radius: 7px;
+	background-color: #b2bbd1;
+	color: #284280;
+	font-size: 1.5em;
+	font-weight: 200;
+	padding: 10px 20px;
+	border: none;
+	transition: 0.4s;
+}
+
+.detaljnije-link:hover{
+	color: white;
+	background-color: #284280;
+}
+
+
+.levo-tekst .opis-poglavlja-kolona .opis-poglavlja{
+	align-items: flex-start;
+}
+
+.levo-tekst .opis-poglavlja-kolona .opis-poglavlja p{
+	text-align: left;
+}
+
+/*GALERIJA*/
+
+
+#galerija-section{
+	background-color: #f5f7fa;
+}
+
+#galerija-slike{
+	padding: 0px 30px;
+	display: flex;
+	justify-content: space-between;
+/*	flex-wrap: wrap;*/
+}
+
+.galerija-kartica-slika{
+	display: flex;
+	justify-content: center;
+	border-radius: 20px;
+	border: 7px solid #284280;
+	padding: 40px;
+	background-color: white;
+}
+
+.galerija-kartica-slika img{
+	max-width: 240px;
+}
+
+.galerija-kartica-btn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+}
+
+.pogledaj-link{
+	border-radius: 20px;
+	color: white;
+	background-color: #284280;
+	font-size: 2em;
+	padding: 10px 30px;
+	border: none;
+	font-weight: 200;
+	transition: 0.4s;
+	border: 3px solid #284280;
+}
+
+.pogledaj-link:hover{
+	background-color: white;
+	color: #284280;
+	border-color: #284280;
+}
+
+
+
+
+/*DODATNE USLUGE*/
+
+#dodatne-usluge-section{
+	background-color: white;
+	padding: 0 30px 60px 30px;
+/*	height: 100vh;*/
+}
+
+.dodatne-usluge-naslov{
+	background-color: white;
+}
+
+#dodatne-usluge-container{
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 0px;
+	border-radius: 20px;
+	border: 7px solid #284280;
+}
+
+
+
+
+.prva-kolona{
+	display: flex;
+	justify-content: center;
+	width: 30%;
+}
+
+.prva-kolona img{
+	background-size: cover;
+	max-width: 250px;
+	object-fit: contain;
+}
+
+.druga-kolona{
+	width: 40%;
+}
+
+.druga-kolona p{
+	line-height: 2em;
+	text-align: center;
+}
+
+.treca-kolona{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 30%;
+
+}
+
+.treca-kolona img{
+	max-width: 180px;
+}
+
+/*FOOTER*/
+
+
+#footer{
+	background-color: #284280;
+	padding: 30px 30px;
+/*	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;*/
+/*	height: 400px;*/
+}
+
+.natpis-footer{
+	color: white;
+	font-size: 1em;
+	font-weight: 200;
+}
+
+.kolona{
+	min-width: 30%;
+}
+
+.footer-prva-kolona{
+	display: flex;
+	margin-bottom: 30px;
+	justify-content: center;
+}
+
+.footer-logo{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.logo{
+	max-width: 450px;
+	height: auto;
+}
+
+
+.footer-druga-kolona{
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+
+
+.info{
+	display: flex;
+	align-items: center;
+}
+
+.info img{
+	max-width: 50px;
+	margin-right: 20px;
+}
+
+
+.h-linija{
+	width: 100%;
+	height: 2px;
+	background-color: white;
+	margin-bottom: 30px;
+}
+
+
+
+
+/*STRANICA KLIMATIZACIJA/GREJANJE/VENTILACIJA*/
+
+.poglavlje{
+	padding: 50px 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+
+.tekst-kolona{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.tekst-kolona p{
+	line-height: 2.5em;
+}
+
+.tekst-kolona h3{
+	font-weight: 300;
+	font-size: 2.5em;
+}
+
+.slika-kolona img{
+	max-height: 380px;
+}
+
+
+
+.nepar-poglavlje{
+	background-color: #284280;
+}
+
+.par-poglavlje{
+	background-color: white;
+}
+
+.par-poglavlje .tekst-kolona{
+	text-align: right;
+}
+
+.par-tekst{
+	color: #284280;
+}
+
+.nepar-tekst{
+	color: white;
+}
+
+#tipovi-uklima{
+	padding: 50px 30px;
+	background-color: #f5f7fa;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.kartica-uklima{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	border: 7px solid #284280;
+	border-radius: 20px;
+	padding: 30px;
+	height: 400px;
+	width: 380px;
+	margin: 0px auto 40px;
+}
+
+.kartica-uklima img{
+	max-width: 300px;
+}
+
+.ime-uklima{
+	
+	color: #284280;
+	font-size: 2em;
+}
+
+
+
+
+
+
+/* RESPONSIVE*/
+
+@media(max-width:1200px){
+
+/*	NASLOVNA*/
+
+	.naslovna-img{
+		max-height: 140px;
+	}
+
+	.naslovna-naslov{
+		max-width: 450px;
+	}
+
+	.naslovna h3{
+	font-size: 2.1em;
+	}
+
+
+/*	NAVBAR*/
+
+	.link-nav{
+		font-size: 1.5em;
+	}
+
+
+/*	GALERIJA*/
+	.galerija-kartica-slika img{
+		max-width: 200px;
+	}
+
+
+/*	STRANICA KLIMATIZACIJA*/
+
+	.slika-kolona img{
+		max-height: 300px;
+	}
+
+	.tekst-kolona h3{
+		font-size: 2em;
+	}
+
+}
+
+
+@media(max-width: 1024px){
+
+
+/*NASLOVNA*/
+
+	.naslovna-img{
+		max-height: 100px;
+	}
+
+	.naslovna-naslov{
+		max-width: 350px;
+	}
+
+	.naslovna h3{
+	font-size: 1.63em;
+	}
+
+
+/*	NAVBAR*/
+
+	.link-nav{
+		font-size: 1.1em;
+	}
+
+/*NASLOV POGLAVLJA*/
+
+	.naslov-poglavlja h2{
+		font-size: 3.5em;
+	}
+
+/*	NASA PONUDA*/
+
+	.opis-poglavlja h3{
+		font-size: 2.5em;
+	}
+
+	.opis-poglavlja p{
+		font-size: 1em;
+		line-height: 2em;
+	}
+
+	.detaljnije-link{
+		font-size: 1.3em;
+	}
+
+
+
+/*	GALERIJA*/
+	
+	.galerija-kartica-slika img{
+		max-width: 130px;
+	}
+
+	.galerija-kartica-slika{
+		margin: auto;
+		width: 220px;
+		padding: 40px 15px;
+	}
+
+	.galerija-kartica-btn{
+
+	}
+
+	.pogledaj-link{
+		font-size: 1.5em;
+	}
+
+/*	NASA PONUDA*/
+
+	#dodatne-usluge-container{
+		flex-wrap: wrap;
+		padding-inline: 30px;
+	}
+
+	.prva-kolona{
+		width: 33%;
+	}
+
+	.prva-kolona img {
+		max-height: 200px;
+	}
+
+	.druga-kolona{
+		width: 100%;
+		order: -1;
+		margin-bottom: 30px;
+	}
+
+
+	.druga-kolona p{
+		text-align: justify;
+	}
+
+	.treca-kolona{
+		width: 67%;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.treca-kolona img{
+		max-height: 200px;
+	}
+
+/*	FOOTER*/
+
+	#footer{
+		flex-wrap: wrap;
+	}
+
+	.footer-prva-kolona{
+		width: 100%;
+		order: -1;
+		margin-bottom: 30px;
+		justify-content: center;
+	}
+
+
+/*	STRANICA KLIMATIZACIJA*/
+
+/*	KLIMATIZACIJA*/
+
+	.tekst-kolona h3{
+		font-size: 2em;
+	}
+
+	.slika-kolona img{
+		max-height: 250px;
+	}
+
+	.poglavlje{
+		align-items: center;
+	}
+
+	.nepar-poglavlje{
+		flex-direction: column;
+	}
+
+	.par-poglavlje{
+		flex-direction: column-reverse;
+	}
+
+	.poglavlje .tekst-kolona{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+
+}
+
+
+@media (max-width: 769px){
+
+/*	NASLOVNA*/
+
+	#menu-btn{
+		visibility: visible;
+	}
+
+	#menu-btn:hover{
+		
+		background-color: white;
+	}
+
+	#menu-btn:hover .menu-linija{
+		background-color: #284280;
+	}
+
+	.naslovna{
+		flex-direction: column;
+	}
+
+	.naslovna-naslov{
+		max-width: 450px;
+	}
+
+	.naslovna-img{
+		max-height: 120px;
+	}
+
+	.naslovne-img{
+		justify-content: center;
+		gap: 40px;
+		display: none;
+	}
+
+	.naslovna h3{
+	font-size: 2.1em;
+	}
+
+
+/*NAVBAR*/
+
+	nav{
+		display: none;
+	}
+	
+	.link-nav{
+		font-size: 0.6em;
+	}
+
+
+/*NASLOV POGLAVLJA*/
+
+	.naslov-poglavlja{
+		height: 100px;
+
+	}
+
+	.naslov-poglavlja h2{
+		font-size: 2.3em;
+	}
+
+/*	NASA PONUDA*/
+
+	#nasa-ponuda-section .naslov-poglavlja{
+		display: none;
+	}
+
+	.opis-poglavlja h3{
+		font-size: 2em;
+	}
+
+	.opis-poglavlja p{
+		
+		font-size: 0.8em;
+	}
+
+	.detaljnije-link{
+		font-size: 1em;
+	}
+
+
+
+	.opis-poglavlja-kolona{
+		padding: 20px;
+	}
+
+
+
+/*	GALERIJA*/
+
+	#galerija-slike{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.galerija-kartica-slika img{
+		max-width: 220px;
+	}
+
+	.galerija-kartica-slika{
+		padding: 40px;
+		width: auto;
+		
+	}
+
+
+/*	DODATNE USLUGE*/
+
+	.prva-kolona img {
+		max-height: 130px;
+	}
+
+
+	.treca-kolona img{
+		max-height: 130px;
+	}
+
+/*	FOOTER*/
+
+
+/*STRANICA KLIMATIZACIJA*/
+
+	.tekst-kolona h3{
+		font-size: 1.5em;
+	}
+
+	.slika-kolona img{
+		max-height: 200px;
+	}
+
+}
+
+
+
+
+
+
+
+
